@@ -1,0 +1,15 @@
+{
+  "name": "sarashina-editor-local",
+  "metadata": {"description": "Sarashina3と協働する日本語推敲プラグイン"},
+  "owner": {
+    "name": "Sarashina Editor contributors"
+  },
+  "plugins": [
+    {
+      "name": "sarashina-editor",
+      "source": "./plugins/sarashina-editor",
+      "description": "Sarashina3と専門編集者の往復で日本語を推敲する",
+      "version": "0.1.0"
+    }
+  ]
+}

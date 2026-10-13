@@ -1,0 +1,20 @@
+{
+  "name": "sarashina-editor-local",
+  "interface": {
+    "displayName": "Sarashina Editor"
+  },
+  "plugins": [
+    {
+      "name": "sarashina-editor",
+      "source": {
+        "source": "local",
+        "path": "./plugins/sarashina-editor"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

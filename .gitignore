@@ -1,0 +1,13 @@
+node_modules/
+.env*
+!.env.example
+*.log
+dist/
+.DS_Store
+
+*.sarashina-backup-*
+*.mcpb
+*.zip
+*.app/
+work/
+session.md

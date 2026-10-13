@@ -1,0 +1,17 @@
+{
+  "name": "sarashina-editor",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Meaning-preserving Japanese revision with Sarashina3 and a host editor",
+  "engines": {"node": ">=20.9"},
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test test/*.test.mjs",
+    "start": "node plugins/sarashina-editor/server.cjs",
+    "setup": "node scripts/setup.mjs",
+    "package": "node scripts/package.mjs"
+  },
+  "dependencies": {"@modelcontextprotocol/sdk": "1.32.1", "zod": "^3.25.76"},
+  "devDependencies": {"esbuild": "0.28.2", "@anthropic-ai/mcpb": "2.1.2"}
+}

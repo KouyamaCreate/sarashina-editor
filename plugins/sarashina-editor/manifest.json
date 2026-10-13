@@ -1,0 +1,52 @@
+{
+  "manifest_version": "0.3",
+  "name": "sarashina-editor",
+  "version": "0.1.0",
+  "description": "Sarashina3と専門編集者の往復で日本語を推敲する",
+  "author": {
+    "name": "Sarashina Editor contributors"
+  },
+  "license": "MIT",
+  "display_name": "Sarashina Editor",
+  "long_description": "意味と専門用語を守りながら、日本語の語順・リズム・語感をSarashina3と推敲します。指定原稿と編集方針をSB Intuitions公式APIへ送信します。無料APIの入出力は提供元で学習利用される場合があります。非公式拡張です。",
+  "server": {
+    "type": "node",
+    "entry_point": "server.cjs",
+    "mcp_config": {
+      "command": "node",
+      "args": [
+        "${__dirname}/server.cjs"
+      ],
+      "env": {
+        "SARASHINA_API_KEY": "${user_config.api_key}"
+      }
+    }
+  },
+  "compatibility": {
+    "platforms": [
+      "darwin",
+      "win32"
+    ],
+    "runtimes": {
+      "node": ">=20.9.0"
+    }
+  },
+  "user_config": {
+    "api_key": {
+      "type": "string",
+      "title": "Sarashina APIキー",
+      "description": "https://chat.sarashina.ai/dashboard/api-keys で発行したキー。OSの秘密情報ストレージで管理されます。",
+      "sensitive": true,
+      "required": true
+    }
+  },
+  "privacy_policies": [
+    "https://www.sbintuitions.co.jp/privacy-policy/"
+  ],
+  "keywords": [
+    "Japanese",
+    "writing",
+    "Sarashina",
+    "editing"
+  ]
+}

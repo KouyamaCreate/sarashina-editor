@@ -1,0 +1,21 @@
+{
+  "name": "sarashina-editor",
+  "version": "0.1.0",
+  "description": "Sarashina3と専門編集者の往復で日本語を推敲する",
+  "author": {
+    "name": "Sarashina Editor contributors"
+  },
+  "license": "MIT",
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Sarashina Editor",
+    "shortDescription": "意味を保ちながら日本語を推敲",
+    "longDescription": "専門知識はCodex、語順・語感の候補はSarashina3。比較審査して推敲する。",
+    "developerName": "Sarashina Editor contributors",
+    "category": "Productivity",
+    "defaultPrompt": [
+      "Sarashinaでこの文章を推敲して。専門用語と主張の強さは変えず、読み手に合う日本語に整えて。"
+    ]
+  }
+}

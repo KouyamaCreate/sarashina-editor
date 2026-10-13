@@ -1,0 +1,9 @@
+{
+  "name": "sarashina-editor",
+  "version": "0.1.0",
+  "description": "Sarashina3と専門編集者の往復で日本語を推敲する",
+  "author": {
+    "name": "Sarashina Editor contributors"
+  },
+  "license": "MIT"
+}
